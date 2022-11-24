@@ -1,0 +1,2 @@
+- Fix vercel CI/CD 
+- Finish homepage
