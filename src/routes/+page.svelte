@@ -1,39 +1,16 @@
-<script>
-  let showMenu = false;
-
-  function toggleNavbar() {
-    showMenu = !showMenu;
-  }
-</script>
-
-<div>
-  <div>
-    <nav class="navbar">
-      <div class="container">
-        <a href="/">
-			<img href="%sveltekit.assets%/images/logo/logo_horizontal.png" alt="Coalition Journal Logo" />
-        </a>
-        <div onclick={toggleNavbar} class="hidden">
-          <button type="button" class="menubutton">
-			button
-		  </button>
-        </div>
-      </div>
-
-      <div class="{showMenu ? 'flex' : 'hidden'}">
-        <a class="home" href="/">Home</a>
-        <a class="about" href="/about">About Us</a>
-      </div>
-    </nav>
-  </div>
-</div>
+<main>
+	<h1>The Coalition Journal</h1>
+	<h3>Home</h3>
+	<br />
+	<p>UNDER CONSTRUCTION</p>
+</main>
 
 <style>
-	.navbar {
-		display: flex;
-	}
-	.container {
-		display: flex;
-		justify-items: center;
+	main {
+		width: 60%;
+		margin: auto;
+		margin-top: 0;
+		text-align: center;
+		padding: 10px;
 	}
 </style>

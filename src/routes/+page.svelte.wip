@@ -1,0 +1,52 @@
+<script>
+	const logoUrl = new URL('/images/logo/logo_vertical.png', import.meta.url).href;
+</script>
+
+<header>
+	<nav class="navbar">
+		<ul>
+			<li><a href="/">
+				<img class="logo" href="{logoUrl}" alt="Coalition Journal Logo" />
+			</a>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About Us</a></li>
+			<li><a href="/">Contact</a></li>
+			<li><a href="/">PAGE0</a></li>
+			<li><a href="/">PAGE1</a></li>
+		</ul>
+	</nav>
+</header>
+
+<style>
+	header {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 10px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		box-shadow: 0 0 15px 0 black;
+	}
+	header * {
+		display: inline;
+	}
+	header a {
+		color: var(--color);
+		text-decoration: none;
+	}
+	header li {
+		margin: 2em;
+	}
+	.logo {
+		height: 12em;
+		will-change: filter;
+		transition: all 500ms ease;
+	}
+	.logo {
+		filter: drop-shadow(0 0 2em #b4b4b4d9);
+	}
+	.logo:hover {
+		filter: drop-shadow(0 0 2em #ffffffff);
+	}
+</style>
